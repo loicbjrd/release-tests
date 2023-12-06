@@ -1,1 +1,1 @@
-console.log('Hello from package A')
+console.log('Hello  friend!')
