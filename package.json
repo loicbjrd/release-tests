@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "changesets": "changesets",
-    "release:publish": "changesets publish",
-    "release:version": "changesets version"
+    "changeset": "changeset",
+    "release:publish": "changeset publish",
+    "release:version": "changeset version"
   },
   "keywords": [],
   "author": "",
