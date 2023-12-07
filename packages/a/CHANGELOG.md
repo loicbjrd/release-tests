@@ -1,5 +1,11 @@
 # a
 
+## 1.3.0
+
+### Minor Changes
+
+- [#13](https://github.com/loicbjrd/release-tests/pull/13) [`a2eb25e`](https://github.com/loicbjrd/release-tests/commit/a2eb25e154779ce9f5c518b012db6cc3546aafff) Thanks [@loicbjrd](https://github.com/loicbjrd)! - Add feature 1
+
 ## 1.2.0
 
 ### Minor Changes
