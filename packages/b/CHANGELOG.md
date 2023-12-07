@@ -1,5 +1,11 @@
 # b
 
+## 1.4.0
+
+### Minor Changes
+
+- [#17](https://github.com/loicbjrd/release-tests/pull/17) [`c304028`](https://github.com/loicbjrd/release-tests/commit/c304028ed12faddc595b2bc6e2b33a66ba9d02b5) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feature 4
+
 ## 1.3.1
 
 ### Patch Changes
