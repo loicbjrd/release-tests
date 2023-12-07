@@ -1,5 +1,11 @@
 # b
 
+## 1.3.1
+
+### Patch Changes
+
+- [#15](https://github.com/loicbjrd/release-tests/pull/15) [`902380f`](https://github.com/loicbjrd/release-tests/commit/902380fbfb09ec0925f9f05212c4f7af6947ba26) Thanks [@loicbjrd](https://github.com/loicbjrd)! - Add feature 3
+
 ## 1.3.0
 
 ### Minor Changes
