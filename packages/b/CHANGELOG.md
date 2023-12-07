@@ -1,5 +1,17 @@
 # b
 
+## 1.4.0
+
+### Minor Changes
+
+- [#22](https://github.com/loicbjrd/release-tests/pull/22) [`ba21f0b`](https://github.com/loicbjrd/release-tests/commit/ba21f0bbaf5b16db45b0c475df4f888f74632f16) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feature 4
+
+- [#22](https://github.com/loicbjrd/release-tests/pull/22) [`85b6046`](https://github.com/loicbjrd/release-tests/commit/85b604629e2068189d542ebfeb465e52a33a6f62) Thanks [@loicbjrd](https://github.com/loicbjrd)! - Add feature 6
+
+### Patch Changes
+
+- [#22](https://github.com/loicbjrd/release-tests/pull/22) [`f154dc9`](https://github.com/loicbjrd/release-tests/commit/f154dc96f05687e2121d9c7dc063024bc283b09b) Thanks [@loicbjrd](https://github.com/loicbjrd)! - Add feature 5
+
 ## 1.3.1
 
 ### Patch Changes
