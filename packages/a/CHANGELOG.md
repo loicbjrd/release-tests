@@ -1,5 +1,11 @@
 # a
 
+## 1.4.0
+
+### Minor Changes
+
+- [#24](https://github.com/loicbjrd/release-tests/pull/24) [`0bafc2a`](https://github.com/loicbjrd/release-tests/commit/0bafc2af6c53f56032b81f15baddc55ccd5428d2) Thanks [@loicbjrd](https://github.com/loicbjrd)! - release 1
+
 ## 1.3.0
 
 ### Minor Changes
