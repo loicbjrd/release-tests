@@ -1,5 +1,11 @@
 # a
 
+## 1.5.0
+
+### Minor Changes
+
+- [#26](https://github.com/loicbjrd/release-tests/pull/26) [`27ebc8c`](https://github.com/loicbjrd/release-tests/commit/27ebc8c5883956900607dca0c820f6e23d3d633a) Thanks [@loicbjrd](https://github.com/loicbjrd)! - feature 2
+
 ## 1.4.0
 
 ### Minor Changes
