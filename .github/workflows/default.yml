@@ -14,9 +14,6 @@ jobs:
     name: build
     runs-on: ubuntu-latest
     steps:
-      - name: Skip on release
-        if: github.event_name == 'pull_request'
-        run: exit 0
       - name: Checkout
         uses: actions/checkout@v2
         with:

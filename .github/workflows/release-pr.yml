@@ -1,0 +1,21 @@
+name: default
+on:
+  pull_request_target:
+    types:
+      - opened
+    branches:
+      - 'changeset-release/**'
+    # paths:
+    #   - '**CHANGELOG.md'
+  workflow_dispatch:
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip on release
+        run: exit 0
