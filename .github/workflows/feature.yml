@@ -1,0 +1,21 @@
+name: default
+on:
+  pull_request:
+    types:
+      - opened
+    branches:
+      - 'feature/**'
+    # paths:
+    #   - '**CHANGELOG.md'
+  workflow_dispatch:
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip on release
+        run: exit 0
