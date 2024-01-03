@@ -1,5 +1,15 @@
 # a
 
+## 2.0.0
+
+### Major Changes
+
+- [`5072613`](https://github.com/loicbjrd/release-tests/commit/5072613b1d72a996eb80ef0978331e6730fa721b) Thanks [@loicbjrd](https://github.com/loicbjrd)! - core update
+
+### Minor Changes
+
+- [`1b56edf`](https://github.com/loicbjrd/release-tests/commit/1b56edfa47d23983ac921346eaf8e2f9fdd0281b) Thanks [@loicbjrd](https://github.com/loicbjrd)! - disable auto commit
+
 ## 1.5.0
 
 ### Minor Changes
