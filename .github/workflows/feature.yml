@@ -1,18 +1,18 @@
-name: release-pr
+name: feature
 on:
   pull_request_target:
     branches:
       - 'main'
     paths:
-      - '**CHANGELOG.md'
+      - '**main.js'
   workflow_dispatch:
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  build:
-    name: build
+  test:
+    name: test
     runs-on: ubuntu-latest
     steps:
       - name: Skip on release
