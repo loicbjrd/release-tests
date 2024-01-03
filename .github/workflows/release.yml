@@ -58,5 +58,6 @@ jobs:
           publish: pnpm release:publish
           version: pnpm release:version
           commit: "chore(release): version packages 🦋"
+          createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
