@@ -14,6 +14,8 @@ jobs:
     name: build
     runs-on: ubuntu-latest
     steps:
+      - name: debug
+        run: echo${{ github.event_name }} ${{ github.event.pull_request.labels.*.name }}
       - name: Skip on release
         if: github.event_name == 'pull_request' && contains(github.event.pull_request.labels.*.name, 'release')
         run: exit 78
