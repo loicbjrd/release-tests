@@ -1,5 +1,11 @@
 # b
 
+## 2.1.0
+
+### Minor Changes
+
+- [#55](https://github.com/loicbjrd/release-tests/pull/55) [`ede1788`](https://github.com/loicbjrd/release-tests/commit/ede178819e41b32a1056e50a369d61ed274cfddc) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feature 13
+
 ## 2.0.0
 
 ### Major Changes
