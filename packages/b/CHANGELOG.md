@@ -1,5 +1,11 @@
 # b
 
+## 1.6.0
+
+### Minor Changes
+
+- [#30](https://github.com/loicbjrd/release-tests/pull/30) [`cf0fb4b`](https://github.com/loicbjrd/release-tests/commit/cf0fb4bbd20f6fd72407e730215142c0350871ae) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feature 8
+
 ## 1.5.0
 
 ### Minor Changes
