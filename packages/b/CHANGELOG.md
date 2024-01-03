@@ -1,5 +1,11 @@
 # b
 
+## 2.0.0
+
+### Major Changes
+
+- [#40](https://github.com/loicbjrd/release-tests/pull/40) [`bd4a1df`](https://github.com/loicbjrd/release-tests/commit/bd4a1df6e359568ee58bc43a8a84f47a48f63e33) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feature 9
+
 ## 1.6.0
 
 ### Minor Changes
