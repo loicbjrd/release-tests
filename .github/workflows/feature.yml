@@ -1,10 +1,8 @@
-name: release-pr
+name: feature
 on:
   pull_request:
-    types:
-      - opened
     branches:
-      - 'changeset-release/**'
+      - 'feature/**'
     # paths:
     #   - '**CHANGELOG.md'
   workflow_dispatch:
@@ -13,8 +11,8 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  build:
-    name: build
+  test:
+    name: test
     runs-on: ubuntu-latest
     steps:
       - name: Skip on release
