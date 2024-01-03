@@ -11,8 +11,8 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  build:
-    name: build
+  release-build:
+    name: release-build
     runs-on: ubuntu-latest
     steps:
       - name: Skip on release
