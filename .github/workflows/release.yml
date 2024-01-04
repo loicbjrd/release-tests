@@ -58,3 +58,9 @@ jobs:
           createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Rebase develop on main
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git checkout develop
+          git rebase main develop
+          git push -f
