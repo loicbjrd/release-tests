@@ -1,5 +1,11 @@
 # b
 
+## 2.7.0
+
+### Minor Changes
+
+- [#76](https://github.com/loicbjrd/release-tests/pull/76) [`caa800f`](https://github.com/loicbjrd/release-tests/commit/caa800f4c465430c3a130a8e7d9c13c0c8446815) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add 22
+
 ## 2.6.0
 
 ### Minor Changes
