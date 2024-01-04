@@ -1,5 +1,11 @@
 # b
 
+## 2.6.0
+
+### Minor Changes
+
+- [#74](https://github.com/loicbjrd/release-tests/pull/74) [`f7cf220`](https://github.com/loicbjrd/release-tests/commit/f7cf22062b816ec13f817efe1a1e0c52a8d7b6e8) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add 21
+
 ## 2.5.0
 
 ### Minor Changes
