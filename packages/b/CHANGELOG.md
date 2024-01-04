@@ -1,5 +1,17 @@
 # b
 
+## 2.2.0
+
+### Minor Changes
+
+- [#64](https://github.com/loicbjrd/release-tests/pull/64) [`7d81fc2`](https://github.com/loicbjrd/release-tests/commit/7d81fc270ef3d87baae8532c5611791868b6881b) Thanks [@loicbjrd](https://github.com/loicbjrd)! - feature 16
+
+- [#58](https://github.com/loicbjrd/release-tests/pull/58) [`77ade32`](https://github.com/loicbjrd/release-tests/commit/77ade32fa744c55a026e0fa4289a48232a718fe6) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feature 14
+
+- [#63](https://github.com/loicbjrd/release-tests/pull/63) [`ce8638a`](https://github.com/loicbjrd/release-tests/commit/ce8638a162aaef0bc6a5a28db520a0f265199e42) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feature 15
+
+- [#66](https://github.com/loicbjrd/release-tests/pull/66) [`4669b2f`](https://github.com/loicbjrd/release-tests/commit/4669b2fea4fb1d0559aaa4dcc99ba0a02b1f0b5d) Thanks [@loicbjrd](https://github.com/loicbjrd)! - 17
+
 ## 2.1.0
 
 ### Minor Changes
