@@ -1,0 +1,15 @@
+name: debug
+on: push
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment:
+      # ETX Relaxnews account is all in one
+      name: ci_production
+    container:
+      image: node:18-alpine
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL_DEV }}
+    steps:
+      - name: debug
+        run: echo ${{secrets.DATABASE_URL_DEV }}
