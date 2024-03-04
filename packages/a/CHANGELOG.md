@@ -1,5 +1,13 @@
 # a
 
+## 2.1.0
+
+### Minor Changes
+
+- [#78](https://github.com/loicbjrd/release-tests/pull/78) [`6b0cde0`](https://github.com/loicbjrd/release-tests/commit/6b0cde0597dd6ca7299fbc8205999b7cc8c655df) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feature 2
+
+- [#77](https://github.com/loicbjrd/release-tests/pull/77) [`213c849`](https://github.com/loicbjrd/release-tests/commit/213c849fd488ff62337e3c83aa2aa37b63756438) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feature 1
+
 ## 2.0.0
 
 ### Major Changes
