@@ -1,5 +1,31 @@
 # a
 
+## 2.4.0
+
+### Minor Changes
+
+- [#91](https://github.com/loicbjrd/release-tests/pull/91) [`91d137d`](https://github.com/loicbjrd/release-tests/commit/91d137dfc96283a3218f036659a81eac3cb85c06) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feat 5
+
+## 2.3.0
+
+### Minor Changes
+
+- [#88](https://github.com/loicbjrd/release-tests/pull/88) [`68e959a`](https://github.com/loicbjrd/release-tests/commit/68e959afffa29e69dd9fe32082710f1857ef40b7) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feat 6
+
+## 2.2.0
+
+### Minor Changes
+
+- [#85](https://github.com/loicbjrd/release-tests/pull/85) [`58ddf82`](https://github.com/loicbjrd/release-tests/commit/58ddf82be47963ea82a86a458e0b68b31e71d93f) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feat 4
+
+## 2.1.0
+
+### Minor Changes
+
+- [#78](https://github.com/loicbjrd/release-tests/pull/78) [`6b0cde0`](https://github.com/loicbjrd/release-tests/commit/6b0cde0597dd6ca7299fbc8205999b7cc8c655df) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feature 2
+
+- [#77](https://github.com/loicbjrd/release-tests/pull/77) [`213c849`](https://github.com/loicbjrd/release-tests/commit/213c849fd488ff62337e3c83aa2aa37b63756438) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feature 1
+
 ## 2.0.0
 
 ### Major Changes

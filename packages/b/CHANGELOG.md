@@ -1,5 +1,11 @@
 # b
 
+## 2.8.0
+
+### Minor Changes
+
+- [#80](https://github.com/loicbjrd/release-tests/pull/80) [`1c8053c`](https://github.com/loicbjrd/release-tests/commit/1c8053c4ab638f73ccc8d70c41253fef34111c65) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feature 23
+
 ## 2.7.0
 
 ### Minor Changes
