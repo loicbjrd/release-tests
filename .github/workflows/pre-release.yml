@@ -18,7 +18,7 @@ jobs:
     name: 🚀 Release
     strategy:
       matrix:
-        os: [ubuntu_self_hosted, Linux, X64, s]
+        os: [ubuntu_self_hosted, Linux, X64, s, ubuntu-latest]
         node-version: [lts/*]
         pnpm-version: [latest]
     runs-on: ${{ matrix.os }}
