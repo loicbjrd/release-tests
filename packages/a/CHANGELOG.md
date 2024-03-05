@@ -1,5 +1,15 @@
 # a
 
+## 2.6.0
+
+### Minor Changes
+
+- [#95](https://github.com/loicbjrd/release-tests/pull/95) [`ffffa96`](https://github.com/loicbjrd/release-tests/commit/ffffa9669b154891eb6d07f946b31d5f8b31c62d) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feat 7
+
+- [`e89fcdf`](https://github.com/loicbjrd/release-tests/commit/e89fcdfb98d74eaec51a0592b8303478a10cd686) Thanks [@loicbjrd](https://github.com/loicbjrd)! - Add feature 10
+
+- [#100](https://github.com/loicbjrd/release-tests/pull/100) [`dbbb7c6`](https://github.com/loicbjrd/release-tests/commit/dbbb7c615becc88a92608505f4a700931585a150) Thanks [@loicbjrd](https://github.com/loicbjrd)! - feat 9
+
 ## 2.5.0
 
 ### Minor Changes
