@@ -6,10 +6,6 @@
 
 - [#113](https://github.com/loicbjrd/release-tests/pull/113) [`17aef9b`](https://github.com/loicbjrd/release-tests/commit/17aef9b4301912018524f60e27fcb866fc05dc38) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feat 13
 
-- [#108](https://github.com/loicbjrd/release-tests/pull/108) [`a30eb64`](https://github.com/loicbjrd/release-tests/commit/a30eb6442f64c045b296db58b325d3a9b6c5d9ae) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feat 12
-
-- [#103](https://github.com/loicbjrd/release-tests/pull/103) [`9e9e714`](https://github.com/loicbjrd/release-tests/commit/9e9e714b514d59b1991eb650bef0872a137eb0e6) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feat 11
-
 ## 2.8.0
 
 ### Minor Changes
