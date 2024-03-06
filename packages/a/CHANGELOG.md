@@ -4,7 +4,7 @@
 
 ### Minor Changes
 
-- [#121](https://github.com/loicbjrd/release-tests/pull/121) [`6785996`](https://github.com/loicbjrd/release-tests/commit/67859962a734c2dafcea95dbd332f6fcdf142298) Thanks [@loicbjrd](https://github.com/loicbjrd)! - feat 14
+- [#116](https://github.com/loicbjrd/release-tests/pull/116) [`c29adae`](https://github.com/loicbjrd/release-tests/commit/c29adae9017ee8aab662f5ca3c82082f02b745ba) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feat 14
 
 ## 2.9.0
 
