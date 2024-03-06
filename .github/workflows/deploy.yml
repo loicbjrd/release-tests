@@ -1,0 +1,20 @@
+name: deploy
+on:
+  push
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        service: [api, portal]
+        stage: [develop, production]
+
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display service and stage
+        run: echo "${{ matrix.service }} - ${{ matrix.stage }}"
+        
