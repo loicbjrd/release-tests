@@ -1,5 +1,15 @@
 # b
 
+## 2.10.0
+
+### Minor Changes
+
+- [#106](https://github.com/loicbjrd/release-tests/pull/106) [`dd18c96`](https://github.com/loicbjrd/release-tests/commit/dd18c9649b73cc7cbd21f834f42b61bfd8f5d8ce) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feat 24
+
+- [#112](https://github.com/loicbjrd/release-tests/pull/112) [`e08adbc`](https://github.com/loicbjrd/release-tests/commit/e08adbc4664b0d21df9a16e4cfbebeefbf1626a8) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feat 26
+
+- [#107](https://github.com/loicbjrd/release-tests/pull/107) [`2c2ea9b`](https://github.com/loicbjrd/release-tests/commit/2c2ea9b44fa4466c8138ac040461de6fffbea0f8) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feat 25
+
 ## 2.9.0
 
 ### Minor Changes
