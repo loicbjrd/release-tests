@@ -1,5 +1,11 @@
 # a
 
+## 2.7.0
+
+### Minor Changes
+
+- [#103](https://github.com/loicbjrd/release-tests/pull/103) [`9e9e714`](https://github.com/loicbjrd/release-tests/commit/9e9e714b514d59b1991eb650bef0872a137eb0e6) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feat 11
+
 ## 2.6.0
 
 ### Minor Changes
