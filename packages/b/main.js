@@ -23,3 +23,4 @@ console.log('Add feature 22');
 console.log('Add feature 23');
 console.log('Add feature 24');
 console.log('Add feature 25');
+console.log('Add feature 26');
