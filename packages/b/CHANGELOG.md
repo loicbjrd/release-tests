@@ -1,5 +1,11 @@
 # b
 
+## 2.10.0
+
+### Minor Changes
+
+- [#112](https://github.com/loicbjrd/release-tests/pull/112) [`e08adbc`](https://github.com/loicbjrd/release-tests/commit/e08adbc4664b0d21df9a16e4cfbebeefbf1626a8) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feat 26
+
 ## 2.9.0
 
 ### Minor Changes
