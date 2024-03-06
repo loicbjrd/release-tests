@@ -1,20 +1,31 @@
 name: deploy
 on:
-  push
+  workflow_call:
+    inputs:
+      service:
+        required: true
+        type: string
+      stage:
+        required: true
+        type: string
+    secrets:
+      envPAT:
+        required: true
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   build:
-    strategy:
-      matrix:
-        service: [api, portal]
-        stage: [develop, production]
+    # strategy:
+    #   matrix:
+    #     service: [api, portal]
+    #     stage: [develop, production]
 
     name: build
     runs-on: ubuntu-latest
+    if: inputs.stage != 'prod' || (inputs.stage == 'prod' && github.ref == 'refs/heads/master')
     steps:
       - name: Display service and stage
-        run: echo "${{ matrix.service }} - ${{ matrix.stage }}"
+        run: echo "${{ inputs.service }} - ${{ inputs.stage }}"
         

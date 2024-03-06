@@ -1,0 +1,33 @@
+name: Manual deploy
+on: 
+  push:
+  workflow_dispatch:
+    inputs:
+      service:
+        description: 'Service to deploy'
+        required: true
+        default: 'api'
+        type: choice
+        options:
+          - api
+          - web
+          - admin
+      stage:
+        description: 'Stage to deploy'
+        required: true
+        type: choice
+        options:
+          - dev
+          - staging
+          - prod
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  call-workflow-passing-data:
+    uses: ./.github/workflows/deploy.yml
+    with:
+      service: '${{ inputs.service }}'
+      stage: '${{ inputs.stage }}'
+    secrets:
+      envPAT: ${{ secrets.envPAT }}
