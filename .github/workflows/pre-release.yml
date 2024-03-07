@@ -2,10 +2,7 @@
 
 name: 🚀 Release
 
-on:
-  push:
-    branches:
-      - release/*
+on: 
   workflow_dispatch:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
