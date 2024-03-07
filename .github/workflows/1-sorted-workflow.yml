@@ -1,0 +1,21 @@
+name: 1-sorted-workflow
+on:
+  pull_request:
+    branches:
+      - 'develop'
+      - 'main'
+  workflow_dispatch:
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          token: ${{ env.GITHUB_TOKEN }}
+          fetch-depth: 0
