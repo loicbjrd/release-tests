@@ -1,31 +1,144 @@
-name: deploy
+name: Manual deployment
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
-      service:
+      application:
+        description: 'Application to deploy'
         required: true
-        type: string
+        type: choice
+        options:
+          - api
+          - portal
+          - player-api
+          - player-playground
+          - player-webapp
+          - docs
       stage:
+        description: 'Stage to deploy'
         required: true
-        type: string
-    secrets:
-      envPAT:
-        required: true
-
+        type: choice
+        options:
+          - develop
+          - beta
+          - production
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  build:
-    # strategy:
-    #   matrix:
-    #     service: [api, portal]
-    #     stage: [develop, production]
-
-    name: build
+  # Let's setup the environment variables from the env-files
+  setup-env:
     runs-on: ubuntu-latest
-    if: inputs.stage != 'prod' || (inputs.stage == 'prod' && github.ref == 'refs/heads/master')
+    name: Setup environment variables
+    if: inputs.stage != 'production' || (inputs.stage == 'production' && github.ref == 'refs/heads/master')
     steps:
-      - name: Display service and stage
-        run: echo "${{ inputs.service }} - ${{ inputs.stage }}"
-        
+      - name: ⬇️ Checkout
+        id: checkout
+        uses: actions/checkout@v2.3.3
+        with:
+          token: ${{ env.GITHUB_TOKEN }}
+          fetch-depth: 0
+      - id: step1
+        run: |
+          export $(grep -vE "^(#.*|\s*)$" ".github/workflows/env-files/${{inputs.stage}}" | xargs)
+          printenv
+          echo "api-url=$API_URL" >> $GITHUB_OUTPUT
+          echo "aws-account-id=$AWS_ACCOUNT_ID" >> $GITHUB_OUTPUT
+          echo "aws-region=$AWS_REGION" >> $GITHUB_OUTPUT
+          echo "certificate-arn-portal=$CERTIFICATE_ARN_PORTAL" >> $GITHUB_OUTPUT
+          echo "certificate-arn-wildcard=$CERTIFICATE_ARN_WILDCARD" >> $GITHUB_OUTPUT
+          echo "debug=$DEBUG" >> $GITHUB_OUTPUT
+          echo "distribution-id=$DISTRIBUTION_ID" >> $GITHUB_OUTPUT
+          echo "docs-s3-bucket=$DOCS_S3_BUCKET" >> $GITHUB_OUTPUT
+          echo "domain=$DOMAIN" >> $GITHUB_OUTPUT
+          echo "log-level=$LOG_LEVEL" >> $GITHUB_OUTPUT
+          echo "stage-name=$STAGE_NAME" >> $GITHUB_OUTPUT
+          echo "vpc-id=$VPC_ID" >> $GITHUB_OUTPUT
+    outputs:
+      api-url: ${{ steps.step1.outputs.api-url }}
+      aws-account-id: ${{ steps.step1.outputs.aws-account-id }}
+      aws-region: ${{ steps.step1.outputs.aws-region }}
+      certificate-arn-portal: ${{ steps.step1.outputs.certificate-arn-portal }}
+      certificate-arn-wildcard: ${{ steps.step1.outputs.certificate-arn-wildcard }}
+      debug: ${{ steps.step1.outputs.debug }}
+      distribution-id: ${{ steps.step1.outputs.distribution-id }}
+      docs-s3-bucket: ${{ steps.step1.outputs.docs-s3-bucket }}
+      domain: ${{ steps.step1.outputs.domain }}
+      log-level: ${{ steps.step1.outputs.log-level }}
+      stage-name: ${{ steps.step1.outputs.stage-name }}
+      vpc-id: ${{ steps.step1.outputs.vpc-id }}
+  deploy-api:
+    uses: ./.github/workflows/deploy-api.yml
+    secrets: inherit
+    needs: setup-env
+    if: ${{ github.event.inputs.application == 'api' }}
+    with:
+      aws-account-id: ${{ needs.setup-env.outputs.aws-account-id }}
+      aws-region: ${{ needs.setup-env.outputs.aws-region }}
+      certificate-arn-wildcard: ${{ needs.setup-env.outputs.certificate-arn-wildcard }}
+      domain: ${{ needs.setup-env.outputs.domain }}
+      log-level: ${{ needs.setup-env.outputs.log-level }}
+      stage-name: ${{ needs.setup-env.outputs.stage-name }}
+      vpc-id: ${{ needs.setup-env.outputs.vpc-id }}
+  deploy-portal:
+    uses: ./.github/workflows/deploy-portal.yml
+    secrets: inherit
+    needs: setup-env
+    if: ${{ github.event.inputs.application == 'portal' }}
+    with:
+      aws-account-id: ${{ needs.setup-env.outputs.aws-account-id }}
+      aws-region: ${{ needs.setup-env.outputs.aws-region }}
+      certificate-arn-portal: ${{ needs.setup-env.outputs.certificate-arn-portal }}
+      domain: ${{ needs.setup-env.outputs.domain }}
+      log-level: ${{ needs.setup-env.outputs.log-level }}
+      stage-name: ${{ needs.setup-env.outputs.stage-name }}
+      vpc-id: ${{ needs.setup-env.outputs.vpc-id }}
+  deploy-player-api:
+    uses: ./.github/workflows/deploy-player-api.yml
+    secrets: inherit
+    needs: setup-env
+    if: ${{ github.event.inputs.application == 'player-api' }}
+    with:
+      aws-account-id: ${{ needs.setup-env.outputs.aws-account-id }}
+      aws-region: ${{ needs.setup-env.outputs.aws-region }}
+      certificate-arn-wildcard: ${{ needs.setup-env.outputs.certificate-arn-wildcard }}
+      domain: ${{ needs.setup-env.outputs.domain }}
+      log-level: ${{ needs.setup-env.outputs.log-level }}
+      stage-name: ${{ needs.setup-env.outputs.stage-name }}
+      vpc-id: ${{ needs.setup-env.outputs.vpc-id }}
+  deploy-player-playground:
+    uses: ./.github/workflows/deploy-player-playground.yml
+    secrets: inherit
+    needs: setup-env
+    if: ${{ github.event.inputs.application == 'player-playground' }}
+    with:
+      aws-account-id: ${{ needs.setup-env.outputs.aws-account-id }}
+      aws-region: ${{ needs.setup-env.outputs.aws-region }}
+      certificate-arn-wildcard: ${{ needs.setup-env.outputs.certificate-arn-wildcard }}
+      domain: ${{ needs.setup-env.outputs.domain }}
+      log-level: ${{ needs.setup-env.outputs.log-level }}
+      stage-name: ${{ needs.setup-env.outputs.stage-name }}
+  deploy-player-webapp:
+    uses: ./.github/workflows/deploy-player-webapp.yml
+    secrets: inherit
+    needs: setup-env
+    if: ${{ github.event.inputs.application == 'player-webapp' }}
+    with:
+      aws-account-id: ${{ needs.setup-env.outputs.aws-account-id }}
+      aws-region: ${{ needs.setup-env.outputs.aws-region }}
+      certificate-arn-wildcard: ${{ needs.setup-env.outputs.certificate-arn-wildcard }}
+      domain: ${{ needs.setup-env.outputs.domain }}
+      log-level: ${{ needs.setup-env.outputs.log-level }}
+      stage-name: ${{ needs.setup-env.outputs.stage-name }}
+  deploy-docs:
+    uses: ./.github/workflows/deploy-docs.yml
+    secrets: inherit
+    needs: setup-env
+    if: ${{ github.event.inputs.application == 'docs' }}
+    with:
+      api-url: ${{ needs.setup-env.outputs.api-url }}
+      aws-account-id: ${{ needs.setup-env.outputs.aws-account-id }}
+      aws-region: ${{ needs.setup-env.outputs.aws-region }}
+      distribution-id: ${{ needs.setup-env.outputs.distribution-id }}
+      docs-s3-bucket: ${{ needs.setup-env.outputs.docs-s3-bucket }}
+      domain: ${{ needs.setup-env.outputs.domain }}
+      stage-name: ${{ needs.setup-env.outputs.stage-name }}

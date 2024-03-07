@@ -1,0 +1,12 @@
+AWS_ACCOUNT_ID='950138487494'
+AWS_REGION=eu-west-1
+CERTIFICATE_ARN_PORTAL=arn:aws:acm:us-east-1:950138487494:certificate/e47832f3-505d-4926-be86-6248295d970b
+CERTIFICATE_ARN_WILDCARD=arn:aws:acm:eu-west-1:950138487494:certificate/6583b44e-b687-409b-a235-1fb02c845920
+STAGE_NAME=beta
+VPC_ID=vpc-0407ff221a87a5f90
+DEBUG=prisma*
+LOG_LEVEL=DEBUG
+DISTRIBUTION_ID=E10ULKTZPHNM97
+API_URL=https://api.beta.voxa.majelan.audio
+DOMAIN=beta.voxa.majelan.audio
+DOCS_S3_BUCKET=em-voxa-api-doc-beta
