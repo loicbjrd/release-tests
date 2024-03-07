@@ -1,5 +1,13 @@
 # a
 
+## 2.12.0
+
+### Minor Changes
+
+- [#131](https://github.com/loicbjrd/release-tests/pull/131) [`86754ed`](https://github.com/loicbjrd/release-tests/commit/86754ed964bb36eb93d49d3fd7b37b3ebbfdf3d7) Thanks [@loicbjrd](https://github.com/loicbjrd)! - feat 17
+
+- [#128](https://github.com/loicbjrd/release-tests/pull/128) [`b64b061`](https://github.com/loicbjrd/release-tests/commit/b64b06101e90c8f73666a0d375ba1222fbbbac80) Thanks [@loicbjrd](https://github.com/loicbjrd)! - add feat 16
+
 ## 2.11.0
 
 ### Minor Changes
