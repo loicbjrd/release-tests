@@ -1,5 +1,11 @@
 # b
 
+## 2.12.0
+
+### Minor Changes
+
+- [#136](https://github.com/loicbjrd/release-tests/pull/136) [`9cfe78a`](https://github.com/loicbjrd/release-tests/commit/9cfe78acc4b65005d558a979d4aad243d5763d7c) Thanks [@loicbjrd](https://github.com/loicbjrd)! - 29
+
 ## 2.11.0
 
 ### Minor Changes
