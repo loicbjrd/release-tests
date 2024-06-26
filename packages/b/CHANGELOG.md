@@ -1,5 +1,11 @@
 # b
 
+## 2.13.1
+
+### Patch Changes
+
+- [#140](https://github.com/loicbjrd/release-tests/pull/140) [`b7abb45`](https://github.com/loicbjrd/release-tests/commit/b7abb45de2529e66ea7d070179848d70d48a17a7) Thanks [@loicbjrd](https://github.com/loicbjrd)! - fix feature 30
+
 ## 2.13.0
 
 ### Minor Changes
